@@ -1,6 +1,3 @@
-getgenv().marker
-getgenv().colour
-
 if game.CoreGui:FindFirstChild("crosshair") then
    game.CoreGui:FindFirstChild("crosshair"):Destroy()
 end
