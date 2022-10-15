@@ -10,11 +10,6 @@ local right = Instance.new("Frame")
 local left = Instance.new("Frame")
 local x = Instance.new("TextLabel")
 
-if marker == "o" then x.Text = "o"
-   else if marker == "x" then x.Text = "x"
-   end
-end
-
 crosshair.Name = "crosshair"
 crosshair.Parent = game.CoreGui
 crosshair.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -61,7 +56,7 @@ x.BackgroundTransparency = 1.000
 x.Position = UDim2.new(0.318840563, 0, 0.192982465, 0)
 x.Size = UDim2.new(0, 23, 0, 18)
 x.Font = Enum.Font.Gotham
-x.Text = "o"
+x.Text = getgenv().marker
 x.TextColor3 = Color3.fromRGB(255, 255, 255)
 x.TextScaled = true
 x.TextSize = 14.000
