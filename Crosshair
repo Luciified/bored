@@ -1,3 +1,7 @@
+if game.CoreGui:FindFirstChild("crosshair") then
+   game.CoreGui:FindFirstChild("crosshair"):Destroy()
+end
+
 local crosshair = Instance.new("ScreenGui")
 local background = Instance.new("Frame")
 local up = Instance.new("Frame")
