@@ -11,7 +11,8 @@ local left = Instance.new("Frame")
 local x = Instance.new("TextLabel")
 
 if marker == "o" then x.Text = "o"
-   elseif marker == "x" then x.Text = "x"
+   else if marker == "x" then x.Text = "x"
+   end
 end
 
 crosshair.Name = "crosshair"
@@ -27,28 +28,28 @@ background.Size = UDim2.new(0, 69, 0, 57)
 
 up.Name = "up"
 up.Parent = background
-up.BackgroundColor3 = colour
+up.BackgroundColor3 = getgenv().colour
 up.BorderColor3 = Color3.fromRGB(0, 0, 0)
 up.Position = UDim2.new(0.473118007, 0, 0.00855723582, 0)
 up.Size = UDim2.new(0, 0, 0, 14)
 
 down.Name = "down"
 down.Parent = background
-down.BackgroundColor3 = colour
+down.BackgroundColor3 = getgenv().colour
 down.BorderColor3 = Color3.fromRGB(0, 0, 0)
 down.Position = UDim2.new(0.473118007, 0, 0.523100734, 0)
 down.Size = UDim2.new(0, 0, 0, 13)
 
 right.Name = "right"
 right.Parent = background
-right.BackgroundColor3 = colour
+right.BackgroundColor3 = getgenv().colour
 right.BorderColor3 = Color3.fromRGB(0, 0, 0)
 right.Position = UDim2.new(0.641949177, 0, 0.382132024, 0)
 right.Size = UDim2.new(0, 14, 0, 0)
 
 left.Name = "left"
 left.Parent = background
-left.BackgroundColor3 = colour
+left.BackgroundColor3 = getgenv().colour
 left.BorderColor3 = Color3.fromRGB(0, 0, 0)
 left.Position = UDim2.new(0.129997805, 0, 0.382132024, 0)
 left.Size = UDim2.new(0, 14, 0, 0)
